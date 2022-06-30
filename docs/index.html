@@ -4,12 +4,17 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="files/libs/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="files/libs/ion.rangeSlider.min.css"/>
+	<link rel="stylesheet" href="files/libs/fancybox.min.css"/>
+
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
     <body>
-        <div class="wrapper">
+        <div class="wrapper wrapper--main">
             <header class="header">
 	<div class="header__top top-header">
 		<div class="top-header__content container">
@@ -38,7 +43,7 @@
 	<div class="header__body body-header">
 		<div class="body-header__content container">
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-sm-6 col-xl-4">
                     <div class="body-header__logo logo-header">
                         <a class="logo-header__link" href="/">
                             <img class="logo-header__icon" src="img/logo.png" alt="Логотип в шапке">
@@ -47,7 +52,7 @@
                         <div class="logo-header__text">Надежная защита с&nbsp;2008&nbsp;года</div>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-sm-6 col-xl-3 body-header__search-col">
                     <div class="body-header__search header-search">                        
                         <form>
                             <div class="header-search__input-wrap">
@@ -63,7 +68,9 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="body-header__info">
-                        <div class="body-header__phone">
+                        <button class="body-header__menu-mobile" type="button">
+                        </button>
+                        <div class="body-header__phone" data-da=".body-header__logo,575,10">
                             <span>Горячая линия</span>
                             <a class="body-header__phone-link" href="tel:84953855042">7 (495) 3855042</a>
                         </div>
@@ -84,6 +91,8 @@
                                 Обратный звонок
                             </a>
                         </div>
+                        <button class="body-header__search-mobile" type="button">
+                        </button>
 
                     </div>
                 </div>
@@ -91,6 +100,7 @@
 		</div>
 	</div>
 	<div class="header__bottom bottom-header">
+        <button class="bottom-header__menu-close-mob" type="button"></button>
 		<div class="bottom-header__content container">
             <nav class="bottom-header__nav header-nav">                
                 <ul class="header-nav__list">
@@ -197,15 +207,227 @@
 </header>
 
 
-            <main class="page">
+            <main class="main-page">
+                <!-- Hero block -->
+                <section class="main-page__hero hero">
+                    <div class="container">
+                        <!-- <div class="row">
+                            <div class="col-lg-8 col-xl-6"> -->
+                                <div class="hero__title">
+                                    <h1>Охранное предприятие "Скала"</h1>
+                                    <div class="border-title hero__border-title">
+                                        Работаем в Москве с 2008 года
+                                    </div>
+                                </div>
+                                <p class="hero__text">Обеспечиваем надежную охрану 120 коммерческим и государственным учреждениям</p>
+                                <a class="hero__btn main-btn link-modal-js" href="#modal-request">Оставить заявку</a>
+                            <!-- </div>                         
+                        </div> -->
+
+                    </div>
+                </section>
+                <!-- End Hero block -->
                 <div class="container">
-                    Привет мир!
+                    <div class="main-page__service service">
+                        <div class="service__block">
+                            <div class="service__item">
+                                <div class="service__picture">
+                                    <picture>
+                                        <!-- <source type="image/webp" srcset="img/main/service-1.webp"> -->
+                                        <img class="service__img" src="img/main/service-1.jpg" alt="Охрана объектов">
+                                    </picture>
+                                </div>
+                                <div class="service__desck">
+                                    <div class="service__title">Охрана объектов</div>
+                                    <a class="service__link" href="#" >Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="service__item">
+                                <div class="service__picture">
+                                    <picture>
+                                        <!-- <source type="image/webp" srcset="img/main/service-2.webp"> -->
+                                        <img class="service__img" src="img/main/service-2.jpg" alt="Охрана бизнеса">
+                                    </picture>
+                                </div>
+                                <div class="service__desck">
+                                    <div class="service__title">Охрана бизнеса</div>
+                                    <a class="service__link" href="#" >Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="service__item">
+                                <div class="service__picture">
+                                    <picture>
+                                        <!-- <source type="image/webp" srcset="img/main/service-3.webp"> -->
+                                        <img class="service__img" src="img/main/service-3.jpg" alt="Охрана мероприятий">
+                                    </picture>
+                                </div>
+                                <div class="service__desck">
+                                    <div class="service__title">Охрана мероприятий</div>
+                                    <a class="service__link" href="#" >Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="service__item">
+                                <div class="service__picture">
+                                    <picture>
+                                        <!-- <source type="image/webp" srcset="img/main/service-4.webp"> -->
+                                        <img class="service__img" src="img/main/service-4.jpg" alt="Сопровождение грузов">
+                                    </picture>
+                                </div>
+                                <div class="service__desck">
+                                    <div class="service__title">Сопровождение грузов</div>
+                                    <a class="service__link" href="#" >Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="service__item">
+                                <div class="service__picture">
+                                    <picture>
+                                        <!-- <source type="image/webp" srcset="img/main/service-5.webp"> -->
+                                        <img class="service__img" src="img/main/service-5.jpg" alt="Пультовая охрана">
+                                    </picture>
+                                </div>
+                                <div class="service__desck">
+                                    <div class="service__title">Пультовая охрана</div>
+                                    <a class="service__link" href="#" >Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
             </main>
             <footer class="footer">
+    <div class="container">
+        <div class="footer__body body-footer">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="body-footer__info footer-info">
+                        <div class="footer-info__top">
+                            <div class="footer-info__phone">
+                                <span>Горячая линия</span>
+                                <a class="footer-info__phone-link" href="tel:84953855042">7 (495) 3855042</a>
+                                <div class="footer-info__messengers messengers">
+                                    <a href="#" class="messengers__item messengers__item--telegramm">
+                                        <svg class="messengers__item-icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="messengers__item messengers__item--whatsapp" href="#">
+                                        <svg class="messengers__item-icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="footer-info__bottom">
+                            <a class="footer-info__text" href="mailto:hohlov@birulevo.com">hohlov@birulevo.com</a>
+                            <p class="footer-info__text">117545 г. Москва, ул. Подольских Курсантов, д.26/Б</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <nav class="body-footer__menu menu-footer">
+                        <a class="menu-footer__title" href="#">
+                            О компании
+                        </a>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Новости</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Образцы договоров</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Лицензии</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Партнерам</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Контроль качества</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Сотрудники</a>
+                            </li>
+                        </ul>
+                    </nav>  
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <nav class="body-footer__menu menu-footer">
+                        <a class="menu-footer__title" href="#">
+                            Услуги и цены
+                        </a>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Для бизнеса</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Для частных лиц</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Охранные услуги</a>
+                            </li>
+                        </ul>
+                        <a class="menu-footer__title" href="#">
+                            Калькулятор
+                        </a>
+                        <a class="menu-footer__title" href="#">
+                            Вакансии
+                        </a>
+                    </nav>  
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <nav class="body-footer__menu menu-footer">
+                        <a class="menu-footer__title" href="#">
+                            Клиентам
+                        </a>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Вопрос - Ответ</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Отзывы</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Акции</a>
+                            </li>
+                        </ul>
+                        <a class="menu-footer__title" href="#">
+                            Контакты
+                        </a>
+                    </nav>  
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__bottom bottom-footer">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="bottom-footer__text">
+                        Лицензия № 338 от 25.12.2008 по 25.12.2023
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bottom-footer__links">
+                        <a class="bottom-footer__text" href="#">Политика конфиденциальности</a>                        
+                        <a class="bottom-footer__text" href="#">Карта сайта</a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </footer>
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/dynamic_adapt.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
+<script src="libs/ion.rangeSlider.min.js"></script>
+<script src="libs/fancybox.min.js"></script>
+<script src="libs/inputmask.min.js"></script>
+
+<script src="js/app.js"></script> 
         </div>  
         <script src="js/app.min.js"></script>    
     </body>
