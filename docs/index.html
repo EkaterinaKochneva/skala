@@ -7,9 +7,9 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="files/libs/swiper-bundle.min.css"/>
-	<link rel="stylesheet" href="files/libs/ion.rangeSlider.min.css"/>
-	<link rel="stylesheet" href="files/libs/fancybox.min.css"/>
+	<link rel="stylesheet" href="libs/ion.rangeSlider.min.css"/>
+	<link rel="stylesheet" href="libs/fancybox.min.css"/>
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
 
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -215,7 +215,7 @@
                             <div class="col-lg-8 col-xl-6"> -->
                                 <div class="hero__title">
                                     <h1>Охранное предприятие "Скала"</h1>
-                                    <div class="border-title hero__border-title">
+                                    <div class="border-text hero__border-title">
                                         Работаем в Москве с 2008 года
                                     </div>
                                 </div>
@@ -227,72 +227,295 @@
                     </div>
                 </section>
                 <!-- End Hero block -->
+                
                 <div class="container">
+                    <!-- Service block -->
                     <div class="main-page__service service">
                         <div class="service__block">
-                            <div class="service__item">
+                            <a class="service__item" href="#">
                                 <div class="service__picture">
                                     <picture>
                                         <!-- <source type="image/webp" srcset="img/main/service-1.webp"> -->
                                         <img class="service__img" src="img/main/service-1.jpg" alt="Охрана объектов">
                                     </picture>
                                 </div>
-                                <div class="service__desck">
+                                <div class="service__desc">
                                     <div class="service__title">Охрана объектов</div>
-                                    <a class="service__link" href="#" >Подробнее</a>
+                                    <div class="service__link">Подробнее</div>
                                 </div>
-                            </div>
-                            <div class="service__item">
+                            </a>
+                            <a class="service__item"  href="#">
                                 <div class="service__picture">
                                     <picture>
                                         <!-- <source type="image/webp" srcset="img/main/service-2.webp"> -->
                                         <img class="service__img" src="img/main/service-2.jpg" alt="Охрана бизнеса">
                                     </picture>
                                 </div>
-                                <div class="service__desck">
+                                <div class="service__desc">
                                     <div class="service__title">Охрана бизнеса</div>
-                                    <a class="service__link" href="#" >Подробнее</a>
+                                    <div class="service__link">Подробнее</div>
                                 </div>
-                            </div>
-                            <div class="service__item">
+                            </a>
+                            <a class="service__item"  href="#">
                                 <div class="service__picture">
                                     <picture>
                                         <!-- <source type="image/webp" srcset="img/main/service-3.webp"> -->
                                         <img class="service__img" src="img/main/service-3.jpg" alt="Охрана мероприятий">
                                     </picture>
                                 </div>
-                                <div class="service__desck">
+                                <div class="service__desc">
                                     <div class="service__title">Охрана мероприятий</div>
-                                    <a class="service__link" href="#" >Подробнее</a>
+                                    <div class="service__link">Подробнее</div>
                                 </div>
-                            </div>
-                            <div class="service__item">
+                            </a>
+                            <a class="service__item service__item--big" href="#">
                                 <div class="service__picture">
                                     <picture>
                                         <!-- <source type="image/webp" srcset="img/main/service-4.webp"> -->
                                         <img class="service__img" src="img/main/service-4.jpg" alt="Сопровождение грузов">
                                     </picture>
                                 </div>
-                                <div class="service__desck">
+                                <div class="service__desc">
                                     <div class="service__title">Сопровождение грузов</div>
-                                    <a class="service__link" href="#" >Подробнее</a>
+                                    <div class="service__link">Подробнее</div>
                                 </div>
-                            </div>
-                            <div class="service__item">
+                            </a>
+                            <a class="service__item service__item--big" href="#">
                                 <div class="service__picture">
                                     <picture>
                                         <!-- <source type="image/webp" srcset="img/main/service-5.webp"> -->
                                         <img class="service__img" src="img/main/service-5.jpg" alt="Пультовая охрана">
                                     </picture>
                                 </div>
-                                <div class="service__desck">
+                                <div class="service__desc">
                                     <div class="service__title">Пультовая охрана</div>
-                                    <a class="service__link" href="#" >Подробнее</a>
+                                    <div class="service__link">Подробнее</div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="service__btn wide-link" href="#">Все услуги</a>
+                    </div>
+                    <!-- End Service block -->
+
+                    <!-- About block -->
+                    <section class="main-page__about about">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="about__gallery">
+                                    <div class="about__img about__img--2">
+                                        <picture>
+                                            <!-- <source type="image/webp" srcset="img/main/license-2.webp"> -->
+                                            <img src="img/main/license-2.jpg" alt="Лицензия вторая страниц">
+                                        </picture>
+                                    </div>
+                                    <div class="about__img about__img--1">
+                                        <picture>
+                                            <!-- <source type="image/webp" srcset="img/main/license-1.webp"> -->
+                                            <img src="img/main/license-1.jpg" alt="Лицензия первая страниц">
+                                        </picture>
+                                    </div>
+                                    
+                                    <a class="about__view-link" href="img/main/license-1.jpg" data-fancybox="license">
+                                        <svg class="about__view-link-icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#search-2"></use>
+                                        </svg>
+                                        Посмотреть</a>
+                                    <a href="img/main/license-2.jpg" data-fancybox="license" style="display: none;"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about__text">
+                                    <div class="main-page__title">
+                                        <h2>О компании</h2>
+                                    </div>
+                                    <p>Частное Охранное Предприятие «ЧОП «Скала» работает на рынке охранных услуг с 2008 года. За время своей работы нами был накоплен большой практический опыт по организации охраны объектов различного назначения. На сегодняшний день нашими партнерами являются ка к крупные компании, так и предприятия малого и среднего бизнеса.</p>
+                                    <p>Все наши сотрудники имеют лицензию на охранную деятельность, проходят теоретическое и практическое обучение, плановые и неплановые периодические проверки.</p>
+                                    <p>При заключении договора на оказание охранных услуг убедитесь, что Вы обращаетесь к профессионалам проверенным годам.</p>
+                                    <div class="about__border-text border-text">Именно таким является Частное Охранное Предприятие «Скала».</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End About block -->
+
+                    <!-- Benefits block -->
+                    <div class="main-page__benefits benefits">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="benefits__item">
+                                    <div class="benefits__img">
+                                        <svg class="benefits__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#flag"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__title">
+                                        Более <span>8&nbsp;лет</span> на&nbsp;рынке
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="benefits__item">
+                                    <div class="benefits__img">
+                                        <svg class="benefits__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#contract"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__title">
+                                        Заключено более <span>1500</span> договоров
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="benefits__item">
+                                    <div class="benefits__img">
+                                        <svg class="benefits__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#people"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__title">
+                                        Более <span>450</span> сотрудников
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-2">
+                                <div class="benefits__item">
+                                    <div class="benefits__img">
+                                        <svg class="benefits__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#camera"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__title">
+                                        <span>824</span> системы видео&#8209;наблюдения установлено
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-2">
+                                <div class="benefits__item">
+                                    <div class="benefits__img">
+                                        <svg class="benefits__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#car"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__title">
+                                        <span>285</span> боевых выездов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-2">
+                                <div class="benefits__item">
+                                    <div class="benefits__img">
+                                        <svg class="benefits__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#fire"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__title">
+                                        <span>961</span> пожарных сигнализаций установлено
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-2">
+                                <div class="benefits__item">
+                                    <div class="benefits__img">
+                                        <svg class="benefits__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#badge"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__title">
+                                        Замена охранника по&nbsp;договору в&nbsp;течении <span>1 часа</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-2">
+                                <div class="benefits__item">
+                                    <div class="benefits__img">
+                                        <svg class="benefits__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#clock"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__title">
+                                        Заступаем на&nbsp;объект за&nbsp;<span>24&nbsp;часа</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-2">
+                                <div class="benefits__item">
+                                    <div class="benefits__img">
+                                        <svg class="benefits__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#doc"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__title">
+                                        Полная материальная ответсвенность по&nbsp;договору
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- End Benefits block -->
+                    <!-- Reviews block -->
+                    <section class="main-page__reviews reviews">
+                        <div class="main-page__title">
+                            <h2>О нас говорят</h2>
+                        </div>
+                        <div class="reviews__wrapper">
+                            <div class="reviews__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="reviews__slide">
+                                            <q class="reviews__quote">... могу с уверенностью рекомендовать охрану 
+                                                как надежного и проверенного партнера</q>
+                                            <div class="reviews__text">
+                                                Наша компания давно работает с СКАЛА поэтому могу с уверенностью рекомендовать охрану как надежного и проверенного партнера, который проводит супер качественную безопасность. В сфере охраны на отечественном рынке мало кто может конкурировать, достойный конкурент в своей сфере, это я могу сказать как клиент компании.
+                                            </div>
+                                            <div class="reviews__author">
+                                                <div class="reviews__author-img">
+                                                    <img src="img/reviews.jpg" alt="Владимир">
+                                                </div>
+                                                <div class="reviews__author-info">
+                                                    <div class="reviews__author-name">Владимир</div>
+                                                    <div class="reviews__author-company">Название компании</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="reviews__slide">
+                                            <q class="reviews__quote">... Цитата второго отзыва</q>
+                                            <div class="reviews__text">
+                                                Текст второго отзыва.
+                                            </div>
+                                            <div class="reviews__author">
+                                                <div class="reviews__author-img">
+                                                    <img src="img/reviews.jpg" alt="Владимир">
+                                                </div>
+                                                <div class="reviews__author-info">
+                                                    <div class="reviews__author-name">Николай</div>
+                                                    <div class="reviews__author-company">Название компании</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews__slider-btn reviews__slider-btn--prev swiper-button-prev">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#arrow-3"></use>
+                                    </svg>
+                                </div>
+                                <div class="reviews__slider-btn reviews__slider-btn--next swiper-button-next">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#arrow-3"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <a class="reviews__btn wide-link" href="#">Все отзывы</a>
+                    </section>
+                    <!-- End Reviews block -->
                 </div>
+                
                 
             </main>
             <footer class="footer">

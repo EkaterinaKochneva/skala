@@ -22,6 +22,23 @@ window.onload = function () {
 		parent.children(".header-nav__submenu--secondary").slideToggle();
 	});
 
+	// Слайдеры
+
+	const reviewsSlider = new Swiper('.reviews__slider', {
+		slidesPerView: 1,
+		// loop: true,
+		// autoHeight: true,
+		// autoplay: {
+		// 	delay: 5000,
+		//   },
+		  navigation: {
+			hide: false,
+			nextEl: '.reviews__slider-btn--next',
+			prevEl: '.reviews__slider-btn--prev',
+		  },
+
+		
+	  });
 	
 
 }
