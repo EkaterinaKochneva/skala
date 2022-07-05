@@ -7,7 +7,8 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="libs/ion.rangeSlider.min.css"/>
+	<!-- <link rel="stylesheet" href="files/libs/ion.rangeSlider.min.css"/> -->
+	<link rel="stylesheet" href="libs/rangeslider.css"/>
 	<link rel="stylesheet" href="libs/fancybox.min.css"/>
 	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
 
@@ -239,73 +240,439 @@
                                     </div>                                                                     
                                 </div>
 
-                                <!-- Service block -->
-                                <div class="page__service service">
-                                    <div class="service__block">
-                                        <a class="service__item" href="#">
-                                            <div class="service__picture">
-                                                <picture>
-                                                    <!-- <source type="image/webp" srcset="img/main/service-1.webp"> -->
-                                                    <img class="service__img" src="img/main/service-1.jpg" alt="Охрана объектов">
-                                                </picture>
-                                            </div>
-                                            <div class="service__desc">
-                                                <div class="service__title">Охрана объектов</div>
-                                                <div class="service__link">Подробнее</div>
-                                            </div>
-                                        </a>
-                                        <a class="service__item"  href="#">
-                                            <div class="service__picture">
-                                                <picture>
-                                                    <!-- <source type="image/webp" srcset="img/main/service-2.webp"> -->
-                                                    <img class="service__img" src="img/main/service-2.jpg" alt="Охрана бизнеса">
-                                                </picture>
-                                            </div>
-                                            <div class="service__desc">
-                                                <div class="service__title">Охрана бизнеса</div>
-                                                <div class="service__link">Подробнее</div>
-                                            </div>
-                                        </a>
-                                        <a class="service__item"  href="#">
-                                            <div class="service__picture">
-                                                <picture>
-                                                    <!-- <source type="image/webp" srcset="img/main/service-3.webp"> -->
-                                                    <img class="service__img" src="img/main/service-3.jpg" alt="Охрана мероприятий">
-                                                </picture>
-                                            </div>
-                                            <div class="service__desc">
-                                                <div class="service__title">Охрана мероприятий</div>
-                                                <div class="service__link">Подробнее</div>
-                                            </div>
-                                        </a>
-                                        <a class="service__item service__item--big" href="#">
-                                            <div class="service__picture">
-                                                <picture>
-                                                    <!-- <source type="image/webp" srcset="img/main/service-4.webp"> -->
-                                                    <img class="service__img" src="img/main/service-4.jpg" alt="Сопровождение грузов">
-                                                </picture>
-                                            </div>
-                                            <div class="service__desc">
-                                                <div class="service__title">Сопровождение грузов</div>
-                                                <div class="service__link">Подробнее</div>
-                                            </div>
-                                        </a>
-                                        <a class="service__item service__item--big" href="#">
-                                            <div class="service__picture">
-                                                <picture>
-                                                    <!-- <source type="image/webp" srcset="img/main/service-5.webp"> -->
-                                                    <img class="service__img" src="img/main/service-5.jpg" alt="Пультовая охрана">
-                                                </picture>
-                                            </div>
-                                            <div class="service__desc">
-                                                <div class="service__title">Пультовая охрана</div>
-                                                <div class="service__link">Подробнее</div>
-                                            </div>
-                                        </a>
+                                 <!-- Tabs block -->
+                                 <div class="page__tabs tabs">
+                                    <div class="tabs__caption">
+                                        <button class="tabs__btn active" type="button">Автоматизированная охрана</button>
+                                        <button class="tabs__btn" type="button">Онлайн контроль объектов</button>
                                     </div>
-                                    <a class="service__btn wide-link" href="#">Все услуги</a>
+                                    <div class="tabs__wrap">
+                                        <div class="tabs__content active">  
+                                            <p>Частное Охранное Предприятие «ЧОП «Скала» работает на рынке охранных услуг с 2008 года. За время своей работы нами был накоплен большой практический опыт по организации охраны объектов различного назначения. На сегодняшний день нашими партнерами являются ка к крупные компании, так и предприятия малого и среднего бизнеса.</p> 
+                                            <p>Все наши сотрудники имеют лицензию на охранную деятельность, проходят теоретическое и практическое обучение, плановые и неплановые периодические проверки.</p>                                                
+                                            <p>При заключении договора на оказание охранных услуг убедитесь, что Вы обращаетесь к профессионалам проверенным годам.</p>                                                                          
+                                            <img class="text__img" src="img/service/service-img.jpg" alt="Семья у загородного дома">
+                                        </div> 
+                                        <div class="tabs__content ">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe debitis at voluptate, voluptas natus ratione, porro veritatis nihil facere voluptates impedit aliquid consequuntur magnam in quibusdam itaque? Molestiae, id vero?</p>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ad eum consequuntur cum, quae fugit labore illum vitae, dolorum adipisci harum quod non tempore cumque, earum rem hic iusto voluptas.</p>
+                                        </div> 
+                                    </div>
+    
                                 </div>
-                                <!-- End Service block -->
+                                 <!-- End Tabs block -->
+                                
+                                <!-- Price list block -->
+                                <div class="page__price">
+                                    <div class="h1">
+                                        Прайс-лист
+                                    </div>
+                                    <div class="bg-table">
+                                        <div class="bg-table__row">
+                                            <div class="bg-table__col bg-table__col--big">Автоматизированная охрана</div>
+                                            <div class="bg-table__col bg-table__col--small"><span>2000 ₽/час</span></div>
+                                        </div>
+                                        <div class="bg-table__row">
+                                            <div class="bg-table__col bg-table__col--big">Онлайн контроль объектов</div>
+                                            <div class="bg-table__col bg-table__col--small"><span>2000 ₽/час</span></div>
+                                        </div>
+                                        <div class="bg-table__row">
+                                            <div class="bg-table__col bg-table__col--big">Автоматизированная охрана</div>
+                                            <div class="bg-table__col bg-table__col--small"><span>2000 ₽/час</span></div>
+                                        </div>
+                                        <div class="bg-table__row">
+                                            <div class="bg-table__col bg-table__col--big">Онлайн контроль объектов</div>
+                                            <div class="bg-table__col bg-table__col--small"><span>2000 ₽/час</span></div>
+                                        </div>
+                                        <div class="bg-table__row">
+                                            <div class="bg-table__col bg-table__col--big">Онлайн контроль объектов</div>
+                                            <div class="bg-table__col bg-table__col--small"><span>2000 ₽/час</span></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- End Price list block -->
+
+                                <!-- Objects block -->
+                                <div class="page__objects">
+                                    <div class="h1">
+                                        С какими объектами работаем
+                                    </div>
+                                    <div class="objects__wrapper">
+                                        <div class="objects__slider swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="objects__item">
+                                                        <div class="objects__img">
+                                                            <picture>
+                                                                <!-- <source type="image/webp" srcset="img/service/object-1.webp"> -->
+                                                                <img src="img/service/object-1.jpg" alt="Отель">
+                                                            </picture>
+                                                        </div>
+                                                        <div class="objects__title">
+                                                            Гостиницы <br>и&nbsp;отели
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="objects__item">
+                                                        <div class="objects__img">
+                                                            <picture>
+                                                                <!-- <source type="image/webp" srcset="img/service/object-2.webp"> -->
+                                                                <img src="img/service/object-2.jpg" alt="Ресторан">
+                                                            </picture>
+                                                        </div>
+                                                        <div class="objects__title">
+                                                            Рестораны и&nbsp;кафе
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="objects__item">
+                                                        <div class="objects__img">
+                                                            <picture>
+                                                                <!-- <source type="image/webp" srcset="img/service/object-3.webp"> -->
+                                                                <img src="img/service/object-3.jpg" alt="Ворота с футбольным мячом">
+                                                            </picture>
+                                                        </div>
+                                                        <div class="objects__title">
+                                                            Спортивные объекты
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="objects__item">
+                                                        <div class="objects__img">
+                                                            <picture>
+                                                                <!-- <source type="image/webp" srcset="img/service/object-4.webp"> -->
+                                                                <img src="img/service/object-4.jpg" alt="Стоянка">
+                                                            </picture>
+                                                        </div>
+                                                        <div class="objects__title">
+                                                            Автостоянки <br>и&nbsp;др.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="objects__slider-btn objects__slider-btn--prev swiper-button-prev">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#arrow-3"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="objects__slider-btn objects__slider-btn--next swiper-button-next">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#arrow-3"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Objects block -->
+
+                                <!-- Calculator block -->
+                                <div class="page__calculator">
+                                    <div class="h1">
+                                        Рассчитать стоимость охраны частных загородных домов
+                                    </div>
+                                    <div class="calculator">
+                                        <form action="">
+                                            <div class="calculator__top">
+                                                <fieldset>
+                                                    <legend class="calculator__title">
+                                                        <svg class="calculator__title-icon icon-svg">
+                                                            <use xlink:href="img/icons/sprite-icons.svg#person"></use>
+                                                        </svg>
+                                                        Количество охранников
+                                                    </legend>
+                                                    <input class="calculator__range" type="range" min="1" max="25" step="1" value="7" id="amount-security">
+                                                    <div class="calculator__range-values">
+                                                        <div class="calculator__range-value calculator__range-value--min">1</div>
+                                                        <div class="calculator__range-value calculator__range-value--max">25</div>
+
+                                                    </div>
+                                                </fieldset>                                              
+                                            </div>
+                                            <div class="calculator__bottom bottom-calc">
+                                                <fieldset class="bottom-calc__item">
+                                                    <legend class="calculator__title">
+                                                        <svg class="calculator__title-icon icon-svg">
+                                                            <use xlink:href="img/icons/sprite-icons.svg#clock-2"></use>
+                                                        </svg>
+                                                        Режим работы
+                                                    </legend>
+                                                    <label class="calculator__radio radio-calc">
+                                                        <input class="radio-calc__input" value="Вахтовый" name="mode" type="radio" checked>
+                                                        <span class="radio-calc__text">Вахтовый</span>
+                                                    </label>
+                                                    <label class="calculator__radio radio-calc">
+                                                        <input class="radio-calc__input" value="Дневной" name="mode" type="radio">
+                                                        <span class="radio-calc__text">Дневной</span>
+                                                    </label>
+                                                    <label class="calculator__radio radio-calc">
+                                                        <input class="radio-calc__input" value="Ночной" name="mode" type="radio">
+                                                        <span class="radio-calc__text">Ночной</span>
+                                                    </label>
+                                                </fieldset>  
+                                                <fieldset class="bottom-calc__item">
+                                                    <legend class="calculator__title">
+                                                        <svg class="calculator__title-icon icon-svg">
+                                                            <use xlink:href="img/icons/sprite-icons.svg#calendar"></use>
+                                                        </svg>
+                                                        График работы
+                                                    </legend>
+                                                    <label class="calculator__radio radio-calc">
+                                                        <input class="radio-calc__input" value="Вахтовый" name="schedule" type="radio" checked>
+                                                        <span class="radio-calc__text">Вахтовый</span>
+                                                    </label>
+                                                    <label class="calculator__radio radio-calc">
+                                                        <input class="radio-calc__input" value="Сменный" name="schedule" type="radio">
+                                                        <span class="radio-calc__text">Сменный</span>
+                                                    </label>
+                                                </fieldset>  
+                                                <div class="bottom-calc__item">
+                                                    <button class="calculator__btn main-btn">
+                                                        Рассчитать
+                                                    </button>
+                                                    <div class="calculator__total">
+                                                        12 000 ₽
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- End Calculator block -->
+                                
+                                <!-- Realized project block -->
+                                <div class="page__realized-project realized-project">
+                                    <div class="h1">
+                                        Реализованные проекты
+                                    </div>
+                                    <div class="realized-project__wrapper">
+                                        <div class="realized-project__slider swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="realized-project__item">
+                                                        <a class="service__item" href="#">
+                                                            <div class="service__picture">
+                                                                <picture>
+                                                                    <!-- <source type="image/webp" srcset="img/main/service-1.webp"> -->
+                                                                    <img class="service__img" src="img/main/service-1.jpg" alt="Охрана объектов">
+                                                                </picture>
+                                                            </div>
+                                                            <div class="service__desc">
+                                                                <div class="service__title">Охрана объектов</div>
+                                                                <div class="service__link">Подробнее</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="realized-project__item">
+                                                        <a class="service__item"  href="#">
+                                                            <div class="service__picture">
+                                                                <picture>
+                                                                    <!-- <source type="image/webp" srcset="img/main/service-2.webp"> -->
+                                                                    <img class="service__img" src="img/main/service-2.jpg" alt="Охрана бизнеса">
+                                                                </picture>
+                                                            </div>
+                                                            <div class="service__desc">
+                                                                <div class="service__title">Охрана бизнеса</div>
+                                                                <div class="service__link">Подробнее</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="realized-project__item">
+                                                        <a class="service__item"  href="#">
+                                                            <div class="service__picture">
+                                                                <picture>
+                                                                    <!-- <source type="image/webp" srcset="img/main/service-3.webp"> -->
+                                                                    <img class="service__img" src="img/main/service-3.jpg" alt="Охрана мероприятий">
+                                                                </picture>
+                                                            </div>
+                                                            <div class="service__desc">
+                                                                <div class="service__title">Охрана мероприятий</div>
+                                                                <div class="service__link">Подробнее</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="realized-project__item">
+                                                        <a class="service__item service__item--big" href="#">
+                                                            <div class="service__picture">
+                                                                <picture>
+                                                                    <!-- <source type="image/webp" srcset="img/main/service-4.webp"> -->
+                                                                    <img class="service__img" src="img/main/service-4.jpg" alt="Сопровождение грузов">
+                                                                </picture>
+                                                            </div>
+                                                            <div class="service__desc">
+                                                                <div class="service__title">Сопровождение грузов</div>
+                                                                <div class="service__link">Подробнее</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="realized-project__item">
+                                                        <a class="service__item service__item--big" href="#">
+                                                            <div class="service__picture">
+                                                                <picture>
+                                                                    <!-- <source type="image/webp" srcset="img/main/service-5.webp"> -->
+                                                                    <img class="service__img" src="img/main/service-5.jpg" alt="Пультовая охрана">
+                                                                </picture>
+                                                            </div>
+                                                            <div class="service__desc">
+                                                                <div class="service__title">Пультовая охрана</div>
+                                                                <div class="service__link">Подробнее</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="realized-project__slider-btn realized-project__slider-btn--prev swiper-button-prev">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#arrow-3"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="realized-project__slider-btn realized-project__slider-btn--next swiper-button-next">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#arrow-3"></use>
+                                            </svg>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <!-- End Realized project block -->
+
+                                <!-- Our customers block -->
+                                <div class="page__customers customers">
+                                    <div class="h1">
+                                        Наши заказчики
+                                    </div>
+                                    <div class="customers__wrapper">
+                                        <div class="customers__slider swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="customers__item">
+                                                        <div class="customers__img">
+                                                            <img src="img/service/customer-logo.png" alt="Ростелеком лого">
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="customers__item">
+                                                        <div class="customers__img">
+                                                            <img src="img/service/klienty-1.jpg" alt="Лого клиент 3">
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="customers__item">
+                                                        <div class="customers__img">
+                                                            <img src="img/service/customer-logo.png" alt="Ростелеком лого">
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="customers__item">
+                                                        <div class="customers__img">
+                                                            <img src="img/service/klienty-2.jpg" alt="Лого клиент 2">
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="customers__item">
+                                                        <div class="customers__img">
+                                                            <img src="img/service/customer-logo.png" alt="Ростелеком лого">
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="customers__item">
+                                                        <div class="customers__img">
+                                                            <img src="img/service/klienty-3.jpg" alt="Лого клиент 3">
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="customers__slider-btn customers__slider-btn--prev swiper-button-prev">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#arrow-3"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="customers__slider-btn customers__slider-btn--next swiper-button-next">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#arrow-3"></use>
+                                            </svg>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <!-- Еnd customers block -->
+                                
+                                <!-- FAQ block -->
+                                <div class="page__faq faq">
+                                    <div class="h1">
+                                        Популярные вопросы
+                                    </div>
+                                    <dl class="faq__wrapper">
+                                        <dt class="faq__question">
+                                            <button class="faq__btn active">
+                                                Что входит в автоматизированную охрану?
+                                            </button>
+                                        </dt>
+                                        <dd class="faq__answer active">
+                                            <div class="faq__answer-content">
+                                                Частное Охранное Предприятие «ЧОП «Скала» работает на рынке охранных услуг с 2008 года. За время своей работы нами был накоплен большой практический опыт по организации охраны объектов различного назначения.
+                                            </div>
+                                        </dd>
+                                        <dt class="faq__question">
+                                            <button class="faq__btn">
+                                                Что входит в автоматизированную охрану?
+                                            </button>
+                                        </dt>
+                                        <dd class="faq__answer">
+                                            <div class="faq__answer-content" style="display: none;">
+                                                Частное Охранное Предприятие «ЧОП «Скала» работает на рынке охранных услуг с 2008 года. За время своей работы нами был накоплен большой практический опыт по организации охраны объектов различного назначения.
+                                            </div>
+                                        </dd>
+                                        <dt class="faq__question">
+                                            <button class="faq__btn">
+                                                Что входит в автоматизированную охрану?
+                                            </button>
+                                        </dt>
+                                        <dd class="faq__answer">
+                                            <div class="faq__answer-content" style="display: none;">
+                                                Частное Охранное Предприятие «ЧОП «Скала» работает на рынке охранных услуг с 2008 года. За время своей работы нами был накоплен большой практический опыт по организации охраны объектов различного назначения.
+                                            </div>
+                                        </dd>
+                                        <dt class="faq__question">
+                                            <button class="faq__btn">
+                                                Что входит в автоматизированную охрану?
+                                            </button>
+                                        </dt>
+                                        <dd class="faq__answer">
+                                            <div class="faq__answer-content" style="display: none;">
+                                                Частное Охранное Предприятие «ЧОП «Скала» работает на рынке охранных услуг с 2008 года. За время своей работы нами был накоплен большой практический опыт по организации охраны объектов различного назначения.
+                                            </div>
+                                        </dd>
+                                        <dt class="faq__question">
+                                            <button class="faq__btn">
+                                                Что входит в автоматизированную охрану?
+                                            </button>
+                                        </dt>
+                                        <dd class="faq__answer">
+                                            <div class="faq__answer-content" style="display: none;">
+                                                Частное Охранное Предприятие «ЧОП «Скала» работает на рынке охранных услуг с 2008 года. За время своей работы нами был накоплен большой практический опыт по организации охраны объектов различного назначения.
+                                            </div>
+                                        </dd>
+                                        
+                                    </dl>
+                                </div>
+                                <!-- Еnd FAQ block -->
 
                                 <!-- Form block -->
                                 <div class="page__questions questions-form">
@@ -655,7 +1022,8 @@
 <script src="libs/jquery.min.js"></script>
 <script src="libs/dynamic_adapt.js"></script>
 <script src="libs/swiper-bundle.min.js"></script>
-<script src="libs/ion.rangeSlider.min.js"></script>
+<!-- <script src="files/libs/ion.rangeSlider.min.js"></script> -->
+<script src="libs/rangeslider.min.js"></script>
 <script src="libs/fancybox.min.js"></script>
 <script src="libs/inputmask.min.js"></script>
 
