@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	<title>Вакансии</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <link rel="stylesheet" href="files/libs/ion.rangeSlider.min.css"/> -->
+	<link rel="stylesheet" href="libs/rangeslider.css"/>
+	<link rel="stylesheet" href="libs/fancybox.min.css"/>
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
+
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+	<div class="header__top top-header">
+		<div class="top-header__content container">
+            <div class="row">
+                <div class="col-sm-6 col-md-8 col-lg-6 col-xl-7">
+                    <div class="top-header__location">
+                        <svg class="top-header__location-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#location"></use>
+                        </svg>
+                        117545 г. Москва, ул. Подольских Курсантов, д.26/Б
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-6 col-xl-5">
+                    <div class="top-header__info">
+                        <div>
+                            <span>Режим работы</span> Круглосуточно
+                        </div>
+                        <div>
+                            <span>Email</span> <a href="mailto:hohlov@birulevo.com">hohlov@birulevo.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<div class="header__body body-header">
+		<div class="body-header__content container">
+            <div class="row">
+                <div class="col-sm-6 col-xl-4">
+                    <div class="body-header__logo logo-header">
+                        <a class="logo-header__link" href="/">
+                            <img class="logo-header__icon" src="img/logo.png" alt="Логотип в шапке">
+                            <span>Скала</span> 
+                        </a>
+                        <div class="logo-header__text">Надежная защита с&nbsp;2008&nbsp;года</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3 body-header__search-col">
+                    <div class="body-header__search header-search">                        
+                        <form>
+                            <div class="header-search__input-wrap">
+                                <input class="header-search__input" name="text" type="text" placeholder="Поиск" autocomplete="off"/>
+                            </div>
+                            <button class="header-search__btn"> 
+                                <svg class="header-search__icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="body-header__info">
+                        <button class="body-header__menu-mobile" type="button">
+                        </button>
+                        <div class="body-header__phone" data-da=".body-header__logo,575,10">
+                            <span>Горячая линия</span>
+                            <a class="body-header__phone-link" href="tel:84953855042">7 (495) 3855042</a>
+                        </div>
+                        <div class="body-header__messengers messengers">
+                            <a href="#" class="messengers__item messengers__item--telegramm">
+                                <svg class="messengers__item-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+                                </svg>
+                            </a>
+                            <a class="messengers__item messengers__item--whatsapp" href="#">
+                                <svg class="messengers__item-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="body-header__callback">
+                            <a class="callback-link link-modal-js" href="#modal-call">
+                                Обратный звонок
+                            </a>
+                        </div>
+                        <button class="body-header__search-mobile" type="button">
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<div class="header__bottom bottom-header">
+        <button class="bottom-header__menu-close-mob" type="button"></button>
+		<div class="bottom-header__content container">
+            <nav class="bottom-header__nav header-nav">                
+                <ul class="header-nav__list">
+                    <!-- Активный пункт меню/текущая страница должны быть в span, с классом active -->
+                    <li class="header-nav__item header-nav__item--main">                        
+                        <a class="header-nav__link header-nav__link--main" href="#">
+                            <svg class="header-nav__link--main-icon icon-svg">
+                                <use xlink:href="img/icons/sprite-icons.svg#burger"></use>
+                            </svg>Услуги и цены</a>
+                        <div class="header-nav__submenu header-nav__submenu--main">
+                            <div class="header-nav__submenu-col">
+                                <a class="header-nav__submenu-title" href="#">
+                                    <svg class="header-nav__submenu-title-icon icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#business"></use>
+                                    </svg>
+                                    Для бизнеса</a>
+                                <ul class="header-nav__sublist header-nav__sublist--main">
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 1</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 2</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 3</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 4</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 5</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 6</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-nav__submenu-col">
+                                <a class="header-nav__submenu-title" href="#">
+                                    <svg class="header-nav__submenu-title-icon icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#individuals"></use>
+                                    </svg>
+                                    Для частных лиц</a>
+                                <ul class="header-nav__sublist header-nav__sublist--main">
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 1 </a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 2</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 3</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 4</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 5</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 6</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-nav__submenu-col">
+                                <a class="header-nav__submenu-title" href="#">
+                                    <svg class="header-nav__submenu-title-icon icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#shield"></use>
+                                    </svg>
+                                    Охранные услуги</a>
+                                <ul class="header-nav__sublist header-nav__sublist--main">
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 1</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 2</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 3</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 4</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 5</a></li>
+                                    <li class="header-nav__subitem header-nav__subitem--main"><a href="#">Дочерняя услуга 6</a></li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li class="header-nav__item header-nav__item--secondary">
+                        <a class="header-nav__link header-nav__link--secondary" href="#" >О компании</a>
+                        <svg class="header-nav__link-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#arrow-1"></use>
+                        </svg>
+                        <div class="header-nav__submenu header-nav__submenu--secondary">
+                            <ul class="header-nav__sublist header-nav__sublist--secondary">
+                                <li class="header-nav__subitem header-nav__subitem--secondary"><a href="#">Новости</a></li>
+                                <li class="header-nav__subitem header-nav__subitem--secondary"><a href="#">Образцы договоров</a></li>
+                                <li class="header-nav__subitem header-nav__subitem--secondary"><a href="#">Лицензии</a></li>
+                                <li class="header-nav__subitem header-nav__subitem--secondary"><a href="#">Партнерам</a></li>
+                                <li class="header-nav__subitem header-nav__subitem--secondary"><a href="#">Контроль качества</a></li>
+                                <li class="header-nav__subitem header-nav__subitem--secondary"><a href="#">Сотрудники</a></li>
+                            </ul>
+                        </div>                           
+                    </li>
+                    <li class="header-nav__item header-nav__item--secondary">
+                        <a class="header-nav__link header-nav__link--secondary" href="#" >Цены</a>                                                 
+                    </li>
+                    <li class="header-nav__item header-nav__item--secondary">
+                        <a class="header-nav__link header-nav__link--secondary" href="#" >Калькулятор</a>                                                 
+                    </li>
+                    <li class="header-nav__item header-nav__item--secondary">
+                        <a class="header-nav__link header-nav__link--secondary" href="#" >Вакансии</a>                                                 
+                    </li>
+                    <li class="header-nav__item header-nav__item--secondary">
+                        <a class="header-nav__link header-nav__link--secondary" href="#" >Клиентам</a>
+                        <svg class="header-nav__link-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#arrow-1"></use>
+                        </svg>
+                        <div class="header-nav__submenu header-nav__submenu--secondary">
+                            <ul class="header-nav__sublist header-nav__sublist--secondary">
+                                <li class="header-nav__subitem header-nav__subitem--secondary"><a href="#">Отзывы</a></li>
+                                <li class="header-nav__subitem header-nav__subitem--secondary"><a href="#">Вопросы</a></li>
+                                <li class="header-nav__subitem header-nav__subitem--secondary"><a href="#">Блог</a></li>
+                            </ul>
+                        </div>                           
+                    </li>
+                    <li class="header-nav__item header-nav__item--secondary">
+                        <a class="header-nav__link header-nav__link--secondary" href="#" >Контакты</a>                                                 
+                    </li>                    
+                </ul>
+            </nav>
+
+		</div>
+	</div>
+</header>
+
+
+            <main class="page">                
+                <div class="container">
+                    <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+                        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>Вакансии</span>
+                            </li>                                    
+                        </ol>                                
+                    </nav>
+                    <div class="row">
+                        <div class="col-lg-9 page__col-body">
+                            <div class="page__body">
+                                <div class="page__title">
+                                    <h1>Вакансии</h1>                                                                  
+                                </div>
+                                    
+                                <div class="page__vacancies accordion vacancies">                                    
+                                    <div class="accordion__wrapper">
+                                        <div class="accordion__top">
+                                            <button class="accordion__btn vacancies__btn active">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#man"></use>
+                                                </svg>
+                                                Охранник
+                                            </button>
+                                        </div>
+                                        <div class="accordion__bottom active">
+                                            <div class="accordion__content" style="display: block;">
+                                                <div class="vacancies__text">
+                                                    <p>Обязанности</p>
+                                                    <ul class="marker-list">
+                                                        <li>Обеспечение безопасности охраняемого лица.</li>
+                                                        <li>Контроль состояния охраняемых объектов;</li>
+                                                        <li>Контроль пропускного режима;</li>
+                                                        <li>Соблюдение должностных инструкций;</li>
+                                                        <li>Обеспечение безопасности и правопорядка на территории охраняемого объекта</li>
+                                                    </ul>
+                                                    <p>Требования</p>
+                                                    <ul class="marker-list">
+                                                        <li>Ответственность, дисциплинированность;</li>
+                                                        <li>Отсутствие административной и уголовной ответственности;</li>
+                                                        <li>Желательно наличие удостоверения частного охранника;</li>
+                                                    </ul>
+                                                    <p>Условия</p>
+                                                    <ul class="marker-list">
+                                                        <li>Официальное оформление согласно ТК РФ, трудоустройство в день обращения;</li>
+                                                        <li>График работы: вахта с проживанием, суточные, дневные или ночные смены;</li>
+                                                        <li>Заработная плата от 2000 руб./смена и выше;</li>
+                                                    </ul>
+                                                    <form class="vacancies__form form-vacancy">
+                                                        <div class="row form-vacancy__row">
+                                                            <div class="col-md-6">
+                                                                <input class="form-vacancy__input" type="text" name="Фамилия Имя Отчество" placeholder="Фамилия Имя Отчество">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input class="form-vacancy__input" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
+                                                            </div>      
+                                                        </div>
+                                                        <div class="row form-vacancy__row">
+                                                            <div class="form-vacancy__file-input-wrap">
+                                                                <input class="form-vacancy__file-input" id="file-input" type="file" name="Файл резюме">
+                                                                <label class="form-vacancy__file-input-lable" for="file-input">
+                                                                    <svg class="icon-svg">
+                                                                        <use xlink:href="img/icons/sprite-icons.svg#clip"></use>
+                                                                    </svg>
+                                                                    Загрузить резюме</label>
+                                                            </div>                                                                
+                                                        </div>
+                                                        <div class="row form-vacancy__row">
+                                                            <div class="col-md-6">
+                                                                <button class="form-vacancy__btn main-btn" type="submit">Откликнуться</button>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="form-vacancy__check custom-checkbox">
+                                                                    <input class="radio-calc__input" type="checkbox" checked="">
+                                                                    <span class="custom-checkbox__text">Отправляя заявку, Вы даете согласие на <a href="#">обработку персональных данных</a></span>
+                                                                </label>
+                                                            </div>      
+                                                        </div>
+                                                    </form>
+                                                                                                        
+                                                </div>
+                                                
+                                            </div>
+                                        </div>   
+                                        
+                                        <div class="accordion__top">
+                                            <button class="accordion__btn vacancies__btn">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#man"></use>
+                                                </svg>
+                                                Охранник ГБР
+                                            </button>
+                                        </div>
+                                        <div class="accordion__bottom">
+                                            <div class="accordion__content">
+                                                <div class="vacancies__text">
+                                                    <p>Обязанности</p>
+                                                    <ul class="marker-list">
+                                                        <li>Обеспечение безопасности охраняемого лица.</li>
+                                                        <li>Контроль состояния охраняемых объектов;</li>
+                                                        <li>Контроль пропускного режима;</li>
+                                                        <li>Соблюдение должностных инструкций;</li>
+                                                        <li>Обеспечение безопасности и правопорядка на территории охраняемого объекта</li>
+                                                    </ul>
+                                                    <p>Требования</p>
+                                                    <ul class="marker-list">
+                                                        <li>Ответственность, дисциплинированность;</li>
+                                                        <li>Отсутствие административной и уголовной ответственности;</li>
+                                                        <li>Желательно наличие удостоверения частного охранника;</li>
+                                                    </ul>
+                                                    <p>Условия</p>
+                                                    <ul class="marker-list">
+                                                        <li>Официальное оформление согласно ТК РФ, трудоустройство в день обращения;</li>
+                                                        <li>График работы: вахта с проживанием, суточные, дневные или ночные смены;</li>
+                                                        <li>Заработная плата от 2000 руб./смена и выше;</li>
+                                                    </ul>
+                                                    <form class="vacancies__form form-vacancy">
+                                                        <div class="row form-vacancy__row">
+                                                            <div class="col-md-6">
+                                                                <input class="form-vacancy__input" type="text" name="Фамилия Имя Отчество" placeholder="Фамилия Имя Отчество">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input class="form-vacancy__input" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
+                                                            </div>      
+                                                        </div>
+                                                        <div class="row form-vacancy__row">
+                                                            <div class="form-vacancy__file-input-wrap">
+                                                                <input class="form-vacancy__file-input" id="file-input" type="file" name="Файл резюме">
+                                                                <label class="form-vacancy__file-input-lable" for="file-input">
+                                                                    <svg class="icon-svg">
+                                                                        <use xlink:href="img/icons/sprite-icons.svg#clip"></use>
+                                                                    </svg>
+                                                                    Загрузить резюме</label>
+                                                            </div>                                                                
+                                                        </div>
+                                                        <div class="row form-vacancy__row">
+                                                            <div class="col-md-6">
+                                                                <button class="form-vacancy__btn main-btn" type="submit">Откликнуться</button>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="form-vacancy__check custom-checkbox">
+                                                                    <input class="radio-calc__input" type="checkbox" checked="">
+                                                                    <span class="custom-checkbox__text">Отправляя заявку, Вы даете согласие на <a href="#">обработку персональных данных</a></span>
+                                                                </label>
+                                                            </div>      
+                                                        </div>
+                                                    </form>
+                                                                                                        
+                                                </div>
+                                                
+                                            </div>
+                                        </div> 
+
+                                        <div class="accordion__top">
+                                            <button class="accordion__btn vacancies__btn">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#man"></use>
+                                                </svg>
+                                                Сотрудник в личную охрану
+                                            </button>
+                                        </div>
+                                        <div class="accordion__bottom">
+                                            <div class="accordion__content">
+                                                <div class="vacancies__text">
+                                                    <p>Обязанности</p>
+                                                    <ul class="marker-list">
+                                                        <li>Обеспечение безопасности охраняемого лица.</li>
+                                                        <li>Контроль состояния охраняемых объектов;</li>
+                                                        <li>Контроль пропускного режима;</li>
+                                                        <li>Соблюдение должностных инструкций;</li>
+                                                        <li>Обеспечение безопасности и правопорядка на территории охраняемого объекта</li>
+                                                    </ul>
+                                                    <p>Требования</p>
+                                                    <ul class="marker-list">
+                                                        <li>Ответственность, дисциплинированность;</li>
+                                                        <li>Отсутствие административной и уголовной ответственности;</li>
+                                                        <li>Желательно наличие удостоверения частного охранника;</li>
+                                                    </ul>
+                                                    <p>Условия</p>
+                                                    <ul class="marker-list">
+                                                        <li>Официальное оформление согласно ТК РФ, трудоустройство в день обращения;</li>
+                                                        <li>График работы: вахта с проживанием, суточные, дневные или ночные смены;</li>
+                                                        <li>Заработная плата от 2000 руб./смена и выше;</li>
+                                                    </ul>
+                                                    <form class="vacancies__form form-vacancy">
+                                                        <div class="row form-vacancy__row">
+                                                            <div class="col-md-6">
+                                                                <input class="form-vacancy__input" type="text" name="Фамилия Имя Отчество" placeholder="Фамилия Имя Отчество">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input class="form-vacancy__input" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
+                                                            </div>      
+                                                        </div>
+                                                        <div class="row form-vacancy__row">
+                                                            <div class="form-vacancy__file-input-wrap">
+                                                                <input class="form-vacancy__file-input" id="file-input" type="file" name="Файл резюме">
+                                                                <label class="form-vacancy__file-input-lable" for="file-input">
+                                                                    <svg class="icon-svg">
+                                                                        <use xlink:href="img/icons/sprite-icons.svg#clip"></use>
+                                                                    </svg>
+                                                                    Загрузить резюме</label>
+                                                            </div>                                                                
+                                                        </div>
+                                                        <div class="row form-vacancy__row">
+                                                            <div class="col-md-6">
+                                                                <button class="form-vacancy__btn main-btn" type="submit">Откликнуться</button>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="form-vacancy__check custom-checkbox">
+                                                                    <input class="radio-calc__input" type="checkbox" checked="">
+                                                                    <span class="custom-checkbox__text">Отправляя заявку, Вы даете согласие на <a href="#">обработку персональных данных</a></span>
+                                                                </label>
+                                                            </div>      
+                                                        </div>
+                                                    </form>
+                                                                                                        
+                                                </div>
+                                                
+                                            </div>
+                                        </div> 
+
+                                    </div>
+                                </div>                        
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <aside class="page__sidebar sidebar">
+                                <nav class="sidebar__menu menu-sidebar">
+                                    <ul class="menu-sidebar__list">
+                                        <!-- Активный родительский пункт должен иметь класс active, текущая страница должна быть в span с классом active -->
+                                        <li class="menu-sidebar__item active">
+                                            <a class="menu-sidebar__link" href="#">Охрана объектов</a>
+                                            <svg class="menu-sidebar__link-icon icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#arrow-1"></use>
+                                            </svg>
+                                            <ul class="menu-sidebar__sublist">
+                                                <li class="menu-sidebar__subitem">
+                                                    <a class="menu-sidebar__sublink" href="#">Дочерняя услуга 1</a>
+                                                </li>
+                                                <li class="menu-sidebar__subitem">
+                                                    <span class="menu-sidebar__sublink active" >Дочерняя услуга 1</span>
+                                                </li>
+                                            </ul>
+                                        </li>                                        
+                                        <li class="menu-sidebar__item">
+                                            <a class="menu-sidebar__link" href="#">Физическая охрана</a>
+                                        </li>
+                                        <li class="menu-sidebar__item">
+                                            <a class="menu-sidebar__link" href="#">Техническая охрана</a>
+                                        </li>                                    
+                                        <li class="menu-sidebar__item">
+                                            <a class="menu-sidebar__link" href="#">Сопровождение грузов</a>
+                                        </li>                                    
+                                        <li class="menu-sidebar__item">
+                                            <a class="menu-sidebar__link" href="#">Охрана бизнеса</a>
+                                        </li> 
+                                        <li class="menu-sidebar__item">
+                                            <a class="menu-sidebar__link" href="#">Охрана мероприятий</a>
+                                        </li>
+                                        <li class="menu-sidebar__item">
+                                            <a class="menu-sidebar__link" href="#">Детективные услуги</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="sidebar__bottom">
+                                    <a class="sidebar__calculator aside-calculator" href="#">
+                                        <div class="aside-calculator__content">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#calculator"></use>
+                                            </svg>
+                                            <span>Расчет стоимости</span>
+                                        </div>                                        
+                                    </a>
+                                    <div class="sidebar__form aside-form">
+                                        <div class="aside-form__title">
+                                            Свяжитесь с нами
+                                        </div>
+                                        <div class="aside-form__messengers messengers">
+                                            <a href="#" class="messengers__item messengers__item--telegramm">
+                                                <svg class="messengers__item-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="messengers__item messengers__item--whatsapp" href="#">
+                                                <svg class="messengers__item-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <form class="aside-form__form">
+                                            <input class="aside-form__input" type="text" name="Имя" placeholder="Имя">
+                                            <input class="aside-form__input" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
+                                            <button class="aside-form__btn main-btn" type="submit">Отправить</button>
+                                            <label class="aside-form__check custom-checkbox">
+                                                <input class="custom-checkbox__input custom-checkbox__input--aside-form" type="checkbox" checked>
+                                                <span class="custom-checkbox__text custom-checkbox__text--aside-form">Согласие на <a href="#">обработку персональных данных</a>
+                                                    </span>
+                                            </label>
+                                        </form>
+                                        <div class="aside-form__info"><span>Режим работы</span> Круглосуточно</div>
+                                    </div>
+                                    <div class="sidebar__location location-btn">
+                                        <a class="location-btn__link" href="#">
+                                            <svg class="location-btn__icon icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#location-2"></use>
+                                            </svg>
+                                            Как добраться
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__body body-footer">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="body-footer__info footer-info">
+                        <div class="footer-info__top">
+                            <div class="footer-info__phone">
+                                <span>Горячая линия</span>
+                                <a class="footer-info__phone-link" href="tel:84953855042">7 (495) 3855042</a>
+                                <div class="footer-info__messengers messengers">
+                                    <a href="#" class="messengers__item messengers__item--telegramm">
+                                        <svg class="messengers__item-icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="messengers__item messengers__item--whatsapp" href="#">
+                                        <svg class="messengers__item-icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="footer-info__bottom">
+                            <a class="footer-info__text" href="mailto:hohlov@birulevo.com">hohlov@birulevo.com</a>
+                            <p class="footer-info__text">117545 г. Москва, ул. Подольских Курсантов, д.26/Б</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <nav class="body-footer__menu menu-footer">
+                        <a class="menu-footer__title" href="#">
+                            О компании
+                        </a>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Новости</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Образцы договоров</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Лицензии</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Партнерам</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Контроль качества</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Сотрудники</a>
+                            </li>
+                        </ul>
+                    </nav>  
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <nav class="body-footer__menu menu-footer">
+                        <a class="menu-footer__title" href="#">
+                            Услуги и цены
+                        </a>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Для бизнеса</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Для частных лиц</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Охранные услуги</a>
+                            </li>
+                        </ul>
+                        <a class="menu-footer__title" href="#">
+                            Калькулятор
+                        </a>
+                        <a class="menu-footer__title" href="#">
+                            Вакансии
+                        </a>
+                    </nav>  
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <nav class="body-footer__menu menu-footer">
+                        <a class="menu-footer__title" href="#">
+                            Клиентам
+                        </a>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Вопрос - Ответ</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Отзывы</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Акции</a>
+                            </li>
+                        </ul>
+                        <a class="menu-footer__title" href="#">
+                            Контакты
+                        </a>
+                    </nav>  
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__bottom bottom-footer">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="bottom-footer__text">
+                        Лицензия № 338 от 25.12.2008 по 25.12.2023
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bottom-footer__links">
+                        <a class="bottom-footer__text" href="#">Политика конфиденциальности</a>                        
+                        <a class="bottom-footer__text" href="#">Карта сайта</a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- Modals-->
+
+<div class="modal" id="modal-call" style="display: none">
+	<form class="modal__form main-form">
+        <div class="main-form__title main-form__title--modal">
+            Обратный звонок
+        </div>
+        <div class="main-form__text main-form__text--modal">
+            Заполните форму, и мы вам перезвоним
+        </div>
+        <div class="main-form__inputs">
+            <input class="main-form__input" type="text" name="Имя" placeholder="Имя">
+            <input class="main-form__input" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
+        </div>
+        <button class="main-form__btn main-btn" type="submit">Отправить</button>
+        <label class="main-form__check custom-checkbox">
+            <input class="custom-checkbox__input custom-checkbox__input--modal" type="checkbox" checked>
+            <span class="custom-checkbox__text">Согласие на обработку персональных данных</span>
+        </label>
+    </form> 
+</div>
+
+<div class="modal" id="modal-request" style="display: none">
+	<form class="modal__form main-form">
+        <div class="main-form__title main-form__title--modal">
+            Оставить заявку
+        </div>
+        <div class="main-form__text main-form__text--modal">
+            Заполните форму, и мы вам перезвоним
+        </div>
+        <div class="main-form__inputs">
+            <input class="main-form__input" type="text" name="Имя" placeholder="Имя">
+            <input class="main-form__input" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
+        </div>
+        <button class="main-form__btn main-btn" type="submit">Отправить</button>
+        <label class="main-form__check custom-checkbox">
+            <input class="custom-checkbox__input custom-checkbox__input--modal" type="checkbox" checked>
+            <span class="custom-checkbox__text">Согласие на обработку персональных данных</span>
+        </label>
+    </form> 
+</div>
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/dynamic_adapt.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
+<!-- <script src="files/libs/ion.rangeSlider.min.js"></script> -->
+<script src="libs/rangeslider.min.js"></script>
+<script src="libs/fancybox.min.js"></script>
+<script src="libs/inputmask.min.js"></script>
+
+<script src="js/app.js"></script> 
+        </div>  
+        <script src="js/app.min.js"></script>    
+    </body>
+</html>

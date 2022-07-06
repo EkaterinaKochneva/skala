@@ -116,6 +116,28 @@ window.onload = function () {
 		},		
 		});
 
+	const interestingSlider = new Swiper('.interesting__slider', {
+		slidesPerView: 1,
+		loop: true,
+		
+		breakpoints: {
+	
+			991: {
+				slidesPerView: 3,
+				spaceBetween: 6,
+			},
+			575: {
+				slidesPerView: 2,	
+				spaceBetween: 20,		
+			}
+		},
+		navigation: {
+		hide: false,
+		nextEl: '.interesting__slider-btn--next',
+		prevEl: '.interesting__slider-btn--prev',
+		},		
+		});
+
 	// mask for input
 	let InputTel = [].slice.call(document.querySelectorAll('input[type="tel"]'));
 	InputTel.forEach(element => element.setAttribute("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}"));
@@ -192,12 +214,19 @@ window.onload = function () {
 	el.textContent = val;
 	}
 
-	// Аккардион FAQ
-
-	$('.faq__btn').click(function(){
-		$(this).toggleClass('active');	
-			$(this).parent().next().toggleClass('active');
-			$(this).parent().next().children().slideToggle();	
+	// Аккардион 
+	$('.accordion__btn').click(function(){
+		if(!$(this).hasClass('active')){
+			$(this).addClass('active');	
+			$(this).parent().next().children().slideDown();	
+			$(this).parent().next().addClass('active');
+				
+		} else {	
+			$(this).removeClass('active');	
+			$(this).parent().next().children().slideUp();
+			$(this).parent().next().removeClass('active');
+			
+		}
 	});
 
 }
